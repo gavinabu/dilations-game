@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dilations Game</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.4.4/math.min.js"></script>
+    <script src="./index.js" defer></script>
+</head>
+<body>
+<span class="time" id="time">0:00</span>
+<div id="cartesian-plane">
+    <canvas id="canvas" height="500" width="500"></canvas>
+</div>
+<p class="score" id="score">Score: 0</p>
+<p id="sf">Scale factor: 0</p>
+<table>
+    <tr id="cords"></tr>
+    <tr id="new-cords"></tr>
+</table>
+<div class="next-container">
+    <button disabled="true" id="next">Next</button>
+</div>
+<div class="calculator">
+    <span id="output">0</span>
+    <div class="rows">
+        <row>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button class="outer">÷</button>
+        </row>
+        <row>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button class="outer">×</button>
+        </row>
+        <row>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button class="outer">-</button>
+        </row>
+        <row>
+            <button>0</button>
+            <button>.</button>
+            <button class="enter">=</button>
+            <button class="outer">+</button>
+        </row>
+    </div>
+</div>
+</body>
+</html>
